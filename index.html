@@ -9,7 +9,6 @@
   </head>
   <body>
 
-<p>TEST</p>
 
 
     <section id="hero"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 163.5" style="enable-background:new 0 0 100 163.5;" xml:space="preserve">
@@ -96,11 +95,11 @@
           <h2><strong>Dites-moi</strong> Hello</h2>
           <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
         </div>
-        <form>
-          <input type="email" placeholder="Votre courriel">
-          <input type="text" placeholder="Sujet">
-          <textarea placeholder="Message"></textarea>
-          <input type="submit" value="Envoyer">
+        <form name="myForm" onsubmit="return false">
+          <input id="email" type="email" placeholder="Votre courriel" name="email">
+          <input id="sujet" type="text" placeholder="Sujet" name="subjet">
+          <textarea id="message" name="body" placeholder="Message"></textarea>
+          <input class="SendEmail" type="submit" value="Envoyer">
         </form>
       </div>
       <p class="copyright">&copy; Apollo Project</p>
